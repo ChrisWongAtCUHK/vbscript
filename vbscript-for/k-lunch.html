@@ -1,0 +1,20 @@
+<script type="text/vbscript">
+Set objFS=CreateObject("Scripting.FileSystemObject")
+count=0
+path = "D:\vbscript\vbscript-for\"
+file = "k-lunch.txt"
+strFile = path & file
+Set objFile = objFS.OpenTextFile(strFile)
+Do Until objFile.AtEndOfStream
+	strLine= objFile.ReadLine
+	'Wscript.Echo strLine
+	s=Split(strLine,",")
+	For i=LBound(s) To UBound(s)
+		'Remove leading spaces
+		document.write(LTrim(s(i)) & "<br>")
+		count = count + 1
+	Next
+Loop
+document.write("<br>" &count & "pp will go to k-lunch")
+objFile.Close
+</script>
