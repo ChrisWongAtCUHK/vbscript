@@ -1,2 +1,0 @@
-Set WshShell = WScript.CreateObject("WScript.Shell")
-Return = WshShell.Run("iexplore.exe http://cccapital-demo.tradingcentral.com/login.asp?token=Rja%2BlzjnZOi5Wnd%2B1s5/a5Wz4N5fVZvsczRxCu3jmXVFJQL7qV6FvLP/udFPqYww", 1)
