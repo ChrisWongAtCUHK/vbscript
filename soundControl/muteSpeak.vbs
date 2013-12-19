@@ -13,7 +13,7 @@ WScript.Sleep 1500
 ' Send tab
 oShell.SendKeys "{TAB}"
 
-' Select all
+' Select enter
 oShell.SendKeys " "
 
 ' Alt + F4
