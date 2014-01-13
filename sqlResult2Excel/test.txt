@@ -1,0 +1,5 @@
+NAME           SID           CREDIT(S)
+-------------- ------------- -------------
+Chris Wong     0123456789              109
+Crushing Andy  1234567890               99
+IAMDEBUGGING   2345678901               99
