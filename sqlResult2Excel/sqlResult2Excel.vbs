@@ -77,13 +77,13 @@ Do Until objFile.AtEndOfStream
 		objExcel.Cells(rowI + 1, colI + 1).Value = "" & CStr(cell) & ""		' how to format a cell, i.e. not automatic format
 		WScript.Echo cell
 	next
-	WScript.Echo row
 	rowI = rowI + 1
 Loop
 
-' Close all files
-
+' Save to excel file in current directory
 objExcel.ActiveWorkbook.SaveAs currDir & "\" & outputXlsx
+
+' Close all files
 objExcel.ActiveWorkbook.Close
 objExcel.Quit
 objFile.Close
